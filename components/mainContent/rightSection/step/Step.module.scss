@@ -1,3 +1,5 @@
+@import '@/styles/breakpointMixin.scss';
+
 .container {
   display: flex;
   flex-direction: column;
@@ -5,9 +7,15 @@
   align-items: center;
   gap: 2rem;
   text-align: center;
-  // &:nth-child(2) {
-  //   flex-direction: row-reverse;
-  // }
+
+  @include desktop {
+    flex-direction: row;
+
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+    }
+  }
+
   .infoWrapper {
     display: flex;
     flex-direction: column;
@@ -27,7 +35,10 @@
     .text {
       color: #1f343e;
       font-size: 1rem;
-      //max-width: 16rem;
+
+      @include desktop {
+        max-width: 16rem;
+      }
     }
   }
 }
