@@ -1,0 +1,24 @@
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background-color: #f8f4f9;
+
+  .copyrightMobile {
+    color: #6d7a80;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footerWrapper {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .copyrightMobile {
+    display: none;
+  }
+}
