@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { caveat_brush } from '@/components/fonts';
 import styles from './Step.module.scss';
 
 type StepProps = {
@@ -13,7 +14,7 @@ const Step = ({ step, title, text, img }: StepProps) => (
     <Image src={img} alt={title} width={128} height={140} />
     <div className={styles.infoWrapper}>
       <p className={styles.step}>{step}</p>
-      <h3 className={styles.title}>{title}</h3>
+      <h3 className={`${styles.title} ${caveat_brush.className}`}>{title}</h3>
       <p className={styles.text}>{text}</p>
     </div>
   </div>
