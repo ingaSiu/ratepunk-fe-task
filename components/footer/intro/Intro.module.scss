@@ -1,0 +1,22 @@
+.introWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #1f343e;
+  max-width: 34rem;
+
+  .introText {
+    text-align: left;
+  }
+
+  .copyrightDesktop {
+    color: #6d7a80;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .copyrightDesktop {
+    display: block;
+  }
+}

@@ -1,0 +1,33 @@
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  h3 {
+    text-transform: uppercase;
+
+    letter-spacing: 0.1rem;
+  }
+  .emailWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 0.5rem;
+
+    img {
+      border: 1px solid #1f343e;
+      border-radius: 0.5rem;
+      background-color: #4eb3e3;
+      cursor: pointer;
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: #2072f3;
+      }
+    }
+  }
+}

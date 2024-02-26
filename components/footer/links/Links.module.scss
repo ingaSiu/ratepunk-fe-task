@@ -1,0 +1,21 @@
+.linksWrapper {
+  .title {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1.125rem;
+  }
+
+  li {
+    margin-top: 1rem;
+
+    .link {
+      font-size: 1rem;
+      color: #1f343e;
+      cursor: pointer;
+
+      &:hover {
+        color: #4eb3e3;
+      }
+    }
+  }
+}
