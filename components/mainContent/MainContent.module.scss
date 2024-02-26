@@ -8,8 +8,10 @@
   align-items: center;
   gap: 3rem;
   margin: 0 auto;
+  padding: 2rem 1rem;
 
   @include desktop {
     flex-direction: row;
+    padding: 4rem;
   }
 }
