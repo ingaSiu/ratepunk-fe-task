@@ -1,0 +1,39 @@
+@import '@/styles/breakpointMixin.scss';
+.container {
+  border: 1px solid #1f343e;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #f8f4f9;
+  max-width: 21.44rem;
+
+  @include desktop {
+    max-width: 34rem;
+    padding: 4rem;
+  }
+
+  .title {
+    color: #1f343e;
+    font-size: 2rem;
+    text-align: left;
+    text-transform: uppercase;
+
+    @include desktop {
+      font-size: 3rem;
+    }
+  }
+
+  .text {
+    color: #1f343e;
+    font-size: 1rem;
+    text-align: left;
+
+    @include desktop {
+      font-size: 1.125rem;
+    }
+  }
+
+  .note {
+    color: #6d7a80;
+    font-size: 1rem;
+  }
+}
