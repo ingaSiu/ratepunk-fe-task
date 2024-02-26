@@ -10,7 +10,7 @@ const Footer = () => {
       <Links />
       <Contact />
 
-      {/* <p className={styles.copyrightMobile}>© 2021 Ratepunk. All Rights Reserved.</p> */}
+      <p className={styles.copyrightMobile}>© 2021 Ratepunk. All Rights Reserved.</p>
     </div>
   );
 };

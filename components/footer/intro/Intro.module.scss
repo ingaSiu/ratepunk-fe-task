@@ -1,3 +1,5 @@
+@import '@/styles/breakpointMixin.scss';
+
 .introWrapper {
   display: flex;
   flex-direction: column;
@@ -12,11 +14,10 @@
   .copyrightDesktop {
     color: #6d7a80;
     display: none;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .copyrightDesktop {
-    display: block;
+    @include desktop {
+      padding-top: 1rem;
+      display: block;
+    }
   }
 }
