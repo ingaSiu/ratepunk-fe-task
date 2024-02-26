@@ -2,18 +2,22 @@
 .container {
   border: 1px solid #1f343e;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: #f8f4f9;
   max-width: 21.44rem;
+  min-height: 33.69rem;
+  position: relative;
 
   @include desktop {
     max-width: 34rem;
+    min-height: 50rem;
     padding: 4rem;
   }
 
   .title {
     color: #1f343e;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
     text-align: left;
     text-transform: uppercase;
 
@@ -26,6 +30,8 @@
     color: #1f343e;
     font-size: 1rem;
     text-align: left;
+    line-height: 1.5rem;
+    padding: 1rem 0;
 
     @include desktop {
       font-size: 1.125rem;
@@ -33,6 +39,8 @@
   }
 
   .note {
+    position: absolute;
+    bottom: 1.5rem;
     color: #6d7a80;
     font-size: 1rem;
   }
