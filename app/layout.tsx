@@ -2,11 +2,9 @@ import '@/styles/globals.scss';
 
 import Footer from '@/components/footer/Footer';
 import Header from '@/components/header/Header';
-import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
 import StoreContent from '@/components/storeContent/StoreContent';
-
-const inter = Inter({ subsets: ['latin'] });
+import { noto_sans } from '@/components/fonts';
 
 export const metadata: Metadata = {
   title: 'Ratepunk FE Task',
@@ -16,7 +14,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={noto_sans.className}>
         <Header />
         {children}
         <StoreContent />
