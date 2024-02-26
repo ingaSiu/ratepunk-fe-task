@@ -1,0 +1,37 @@
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .inputWrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #1f343e;
+
+    input {
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      color: #6d7a80;
+    }
+  }
+
+  .btn {
+    background-color: #4eb3e3;
+    border: 1px solid #1f343e;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2072f3;
+    }
+  }
+}
