@@ -1,7 +1,10 @@
 import '@/styles/globals.scss';
 
+import Footer from '@/components/footer/Footer';
+import Header from '@/components/header/Header';
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
+import StoreContent from '@/components/storeContent/StoreContent';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,15 +13,17 @@ export const metadata: Metadata = {
   description: 'Ratepunk landing page',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <StoreContent />
+        <Footer />
+      </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
 
