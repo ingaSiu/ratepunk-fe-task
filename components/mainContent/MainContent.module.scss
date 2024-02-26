@@ -1,0 +1,15 @@
+@import '@/styles/breakpointMixin.scss';
+
+.mainWrapper {
+  background-color: #f8cc5d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 0 auto;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
