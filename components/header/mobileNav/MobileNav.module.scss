@@ -1,0 +1,44 @@
+@import '@/styles/breakpointMixin.scss';
+
+.menu {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  height: 0;
+  overflow: hidden;
+  .navLinks {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+
+    justify-content: space-around;
+    height: 100%;
+
+    li {
+      padding: 0 1rem;
+      a {
+        font-size: 1rem;
+
+        &:hover {
+          color: #4eb3e3;
+        }
+      }
+    }
+  }
+}
+
+.menu.active {
+  height: 13.625rem;
+  border-bottom: 1px solid #1f343e;
+}
+
+.wrapper {
+  position: absolute;
+  right: 0.5rem;
+
+  @include desktop {
+    display: none;
+  }
+}
