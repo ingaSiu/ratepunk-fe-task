@@ -3,7 +3,7 @@
 
 ## Getting started
 
-- Run command npm in the terminal to add packages
+- Run command npm i in the terminal to add packages
 - To start the project, run the command npm run dev
 
 Responsive landing page built according to a provided [Adobe design](https://xd.adobe.com/view/71b314b1-abe5-4705-8721-c8608a7eb26d-24e0/screen/46f744db-617a-4d67-83b6-a16fb0f3dca0/)
