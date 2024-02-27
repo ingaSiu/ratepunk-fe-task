@@ -8,8 +8,7 @@ const StoreContent = () => {
   return (
     <div className={styles.storeWrapper}>
       <StoreCard
-        storeLink="https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklk
-      hgcbomfdck?utm_source=ratepunk"
+        storeLink="https://chromewebstore.google.com/detail/ratepunk-hotel-booking-an/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk%5D"
         imageLink="/img/chrome.svg"
         text="available in the"
         storeName="chrome web store"
