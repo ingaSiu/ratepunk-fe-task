@@ -6,7 +6,7 @@ const Links = () => (
     <h3 className={styles.title}>Quick links</h3>
     <ul>
       <li>
-        <Link href="#" className={styles.link}>
+        <Link href="#" className={`${styles.link} ${styles.highlightedLink}`}>
           Price Comparison
         </Link>
       </li>

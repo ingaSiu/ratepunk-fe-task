@@ -1,3 +1,5 @@
+@import '@/styles/breakpointMixin.scss';
+
 .linksWrapper {
   .title {
     text-transform: uppercase;
@@ -14,6 +16,12 @@
       cursor: pointer;
 
       &:hover {
+        color: #4eb3e3;
+      }
+    }
+
+    @include desktop {
+      .highlightedLink {
         color: #4eb3e3;
       }
     }
