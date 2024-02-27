@@ -17,13 +17,14 @@
 
   .title {
     color: #1f343e;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 3rem;
     text-align: left;
     text-transform: uppercase;
 
     @include desktop {
       font-size: 3rem;
+      line-height: 4.5rem;
     }
   }
 
@@ -32,17 +33,22 @@
     font-size: 1rem;
     text-align: left;
     line-height: 1.5rem;
-    padding: 1rem 0;
+    padding: 1rem 0 3rem 0;
 
     @include desktop {
-      font-size: 1.125rem;
+      font-size: 1.25rem;
+      line-height: 2rem;
     }
   }
 
   .note {
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 1.94rem;
     color: #6d7a80;
     font-size: 1rem;
+
+    @include desktop {
+      bottom: 3.94rem;
+    }
   }
 }
