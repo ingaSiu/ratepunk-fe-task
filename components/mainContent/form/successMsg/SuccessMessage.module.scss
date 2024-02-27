@@ -1,0 +1,14 @@
+@use '@/styles/colors' as c;
+
+.successMessage {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  .text {
+    color: c.$color-accent-dark;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+  }
+}
