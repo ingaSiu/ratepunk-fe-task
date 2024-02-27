@@ -11,7 +11,7 @@ type StepProps = {
 
 const Step = ({ step, title, text, img }: StepProps) => (
   <div className={styles.container}>
-    <Image src={img} alt={title} width={128} height={140} />
+    <Image src={img} alt={title} width={140} height={140} />
     <div className={styles.infoWrapper}>
       <p className={styles.step}>{step}</p>
       <h3 className={`${styles.title} ${caveat_brush.className}`}>{title}</h3>
