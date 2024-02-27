@@ -1,16 +1,18 @@
+@import '@/styles/breakpointMixin.scss';
 .cardWrapper {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   border: 1px solid #1f343e;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  min-width: 18rem;
+  padding: 0.875rem 1.25rem;
+  border-radius: 1.5rem;
+  min-width: 19.5rem;
 
   .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .text {
       color: #f8f4f9;
       font-size: 1rem;
@@ -19,12 +21,7 @@
     .storeTitle {
       color: #f8f4f9;
       font-size: 1.25rem;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .cardWrapper {
-      min-width: 19rem;
+      font-weight: 700;
     }
   }
 }
