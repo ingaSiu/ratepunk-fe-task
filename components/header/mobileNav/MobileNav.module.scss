@@ -18,9 +18,10 @@
 
     li {
       padding: 0 1rem;
+
       a {
         font-size: 1rem;
-
+        color: #1f343e;
         &:hover {
           color: #4eb3e3;
         }
@@ -30,13 +31,13 @@
 }
 
 .menu.active {
-  height: 13.625rem;
+  height: 11.125rem;
   border-bottom: 1px solid #1f343e;
 }
 
 .wrapper {
   position: absolute;
-  right: 0.5rem;
+  right: 1rem;
 
   @include desktop {
     display: none;

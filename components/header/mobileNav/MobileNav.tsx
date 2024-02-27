@@ -32,9 +32,9 @@ const MobileMenu = () => {
 
       <div onClick={handleClick} className={styles.wrapper}>
         {isOpen ? (
-          <Image src="/icons/close.svg" alt="close mobile menu" width={16} height={18} />
+          <Image src="/icons/close.svg" alt="close mobile menu" width={19} height={16} />
         ) : (
-          <Image src="/icons/menu.svg" alt="open mobile menu" width={16} height={18} />
+          <Image src="/icons/menu.svg" alt="open mobile menu" width={19} height={16} />
         )}
       </div>
     </>
