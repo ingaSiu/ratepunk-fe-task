@@ -12,6 +12,7 @@
     flex-direction: row;
     gap: 2rem;
     text-align: left;
+
     &:nth-child(2) {
       flex-direction: row-reverse;
     }
