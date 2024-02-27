@@ -1,8 +1,9 @@
+@use '@/styles/colors' as c;
 @import '@/styles/breakpointMixin.scss';
 
 .header {
-  border-bottom: 1px solid #1f343e;
-  background-color: #ffffff;
+  border-bottom: 1px solid c.$color-accent-dark;
+  background-color: c.$color-white;
   position: sticky;
   z-index: 1;
   .container {

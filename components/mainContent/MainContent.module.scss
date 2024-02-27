@@ -1,7 +1,8 @@
+@use '@/styles/colors' as c;
 @import '@/styles/breakpointMixin.scss';
 
 .mainWrapper {
-  background-color: #f8cc5d;
+  background-color: c.$color-bg-primary;
   display: flex;
   flex-direction: column;
   justify-content: center;

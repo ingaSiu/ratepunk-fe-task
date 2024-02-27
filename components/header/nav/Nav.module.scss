@@ -1,13 +1,13 @@
-@use '@/styles/colors' as color;
+@use '@/styles/colors' as c;
 @import '@/styles/breakpointMixin.scss';
 .nav {
   display: none;
 
   a {
-    color: color.$color-grey-dark;
+    color: c.$color-grey-dark;
 
     &:hover {
-      color: color.$color-blue-main;
+      color: c.$color-blue-main;
       transition: color 0.4s ease-in-out;
     }
 
@@ -23,6 +23,6 @@
   }
 
   .coloredLink {
-    color: color.$color-blue-main;
+    color: c.$color-blue-main;
   }
 }

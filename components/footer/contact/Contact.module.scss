@@ -1,3 +1,4 @@
+@use '@/styles/colors' as c;
 @import '@/styles/breakpointMixin.scss';
 
 .contactWrapper {
@@ -21,7 +22,7 @@
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    color: #1f343e;
+    color: c.$color-accent-dark;
   }
 
   .wrapper {
@@ -29,14 +30,14 @@
     gap: 0.5rem;
 
     img {
-      border: 1px solid #1f343e;
+      border: 1px solid c.$color-accent-dark;
       border-radius: 0.5rem;
-      background-color: #4eb3e3;
+      background-color: c.$color-blue-main;
       cursor: pointer;
       padding: 0.5rem;
 
       &:hover {
-        background-color: #2072f3;
+        background-color: c.$color-blue-hover;
       }
     }
   }

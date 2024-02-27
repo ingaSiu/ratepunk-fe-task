@@ -1,9 +1,10 @@
+@use '@/styles/colors' as c;
 @import '@/styles/breakpointMixin.scss';
 .cardWrapper {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  border: 1px solid #1f343e;
+  border: 1px solid c.$color-accent-dark;
   padding: 0.875rem 1.25rem;
   border-radius: 1rem;
   min-width: 19.5rem;
@@ -14,12 +15,12 @@
     justify-content: center;
 
     .text {
-      color: #f8f4f9;
+      color: c.$color-white-bg;
       font-size: 1rem;
     }
 
     .storeTitle {
-      color: #f8f4f9;
+      color: c.$color-white-bg;
       font-size: 1.25rem;
       font-weight: 700;
     }

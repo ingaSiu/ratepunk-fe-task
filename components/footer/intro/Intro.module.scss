@@ -1,10 +1,11 @@
+@use '@/styles/colors' as c;
 @import '@/styles/breakpointMixin.scss';
 
 .introWrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  color: #1f343e;
+  color: c.$color-accent-dark;
   max-width: 34rem;
 
   .introText {
@@ -14,7 +15,7 @@
   }
 
   .copyrightDesktop {
-    color: #6d7a80;
+    color: c.$color-grey-regular;
     display: none;
 
     @include desktop {

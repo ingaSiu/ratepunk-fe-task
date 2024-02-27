@@ -1,3 +1,4 @@
+@use '@/styles/colors' as c;
 @import '@/styles/breakpointMixin.scss';
 
 .linksWrapper {
@@ -18,17 +19,17 @@
 
     .link {
       font-size: 1rem;
-      color: #1f343e;
+      color: c.$color-accent-dark;
       cursor: pointer;
 
       &:hover {
-        color: #4eb3e3;
+        color: c.$color-blue-main;
       }
     }
 
     @include desktop {
       .highlightedLink {
-        color: #4eb3e3;
+        color: c.$color-blue-main;
       }
 
       .title {
