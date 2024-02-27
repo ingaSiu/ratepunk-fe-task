@@ -4,7 +4,12 @@
   .title {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    @include desktop {
+      font-size: 1.125rem;
+    }
   }
 
   li {
@@ -23,6 +28,10 @@
     @include desktop {
       .highlightedLink {
         color: #4eb3e3;
+      }
+
+      .title {
+        font-size: 1.125rem;
       }
     }
   }
