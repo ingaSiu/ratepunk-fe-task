@@ -37,7 +37,8 @@
     border-radius: 0.5rem;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:active {
       background-color: c.$color-blue-hover;
     }
   }

@@ -6,7 +6,8 @@
   a {
     color: c.$color-grey-dark;
 
-    &:hover {
+    &:hover,
+    &:active {
       color: c.$color-blue-main;
       transition: color 0.4s ease-in-out;
     }

@@ -22,7 +22,8 @@
       color: c.$color-accent-dark;
       cursor: pointer;
 
-      &:hover {
+      &:hover,
+      &:active {
         color: c.$color-blue-main;
       }
     }

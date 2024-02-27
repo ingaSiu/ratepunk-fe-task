@@ -36,7 +36,8 @@
       cursor: pointer;
       padding: 0.5rem;
 
-      &:hover {
+      &:hover,
+      &:active {
         background-color: c.$color-blue-hover;
       }
     }
