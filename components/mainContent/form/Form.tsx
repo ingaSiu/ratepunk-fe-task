@@ -23,7 +23,7 @@ const Form = () => {
   const submitEmail = async () => {
     try {
       setIsSubmitting(true);
-      console.log(ACCESS_KEY);
+
       await axios.put(
         `https://api.jsonbin.io/v3/b/${BIN_ID}`,
         { email },
@@ -50,7 +50,6 @@ const Form = () => {
     } else if (!email.match(verifyEmail)) {
       setStatus('invalid');
     } else {
-      console.log(email);
       submitEmail();
       setStatus('');
     }
@@ -72,7 +71,7 @@ const Form = () => {
           <div className={styles.inputWrapper}>
             <Image src="/icons/email.svg" alt="Email input icon" width={20} height={20} />
             <input
-              type="email"
+              type="text"
               value={email}
               placeholder="Enter your email address"
               onChange={(e) => setEmail(e.target.value)}
